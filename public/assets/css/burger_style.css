@@ -1,15 +1,16 @@
 #imgElement{
-    /* display:inline-block; */
-    width:20px;
-    height:20px;
+    width:30%;
 }
- #jumboDiv{
-    background-color: orange;
-} 
-.container{
-    background-color: orange;
-} */
-
 body{
-    background-color:orange;
+    background-color:#FFECF5;
+    font-family: 'Fondamento', cursive;
+}
+.btn{
+    background-color: 	#DEB887;
+}
+span{
+    font-size: 35px;
+}
+li{
+    list-style: none
 }
