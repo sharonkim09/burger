@@ -18,5 +18,5 @@ var burger = {
         });
       },
 };
-
+// export so other files have access
 module.exports = burger;
