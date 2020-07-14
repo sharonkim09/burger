@@ -19,6 +19,7 @@ This application is a burger logger that lets users input the names of burgers o
 ## Usage
 [Link to Deployed Application](https://damp-depths-84040.herokuapp.com/)
 
+![weather info](./public/assets/img/burger-screenshot.png)
 
 
 
