@@ -1,33 +1,36 @@
-<h1>Hello</h1>
+<div class="jumbotron"><h1 class="text-center">Eat-Da-Burger</h1></div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2>Burgers not eaten</h2>
+            <h2 class=>Burgers not eaten</h2>
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                <span> {{this.id}}. {{this.burger_name}}</span>
-                <button type="button" class="btn btn-primary" id="devourButton" data-id={{this.id}}>DEVOUR IT</button>
+                <li><span> {{this.id}}. {{this.burger_name}}</span>
+                    <button type="button" class="btn btn-primary" id="devourButton" data-id={{this.id}}>DEVOUR
+                        IT</button></li>
                 {{/unless}}
                 {{/each}}
             </ul>
         </div>
-    </div>
 
-    <div class="col-md-8">
-        <h2>Devoured Burgers</h2>
-        <ul>
-            {{#each burgers}}
-            {{#if devoured}}
-            <span> {{this.id}}. {{this.burger_name}}</span>
-            {{/if}}
-            {{/each}}
-        </ul>
+
+        <div class="col-md-6">
+            <h2>Devoured Burgers</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <span> {{this.id}}. {{this.burger_name}}</span>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
     </div>
-<form class="create-form">
-    <div class="form-group">
-      <input type="text" id="newBurger" name="burger">
-      <button type="submit" class="btn btn-primary" id="addBurger">Add Burger</button>
-    </div>
-</form>
+    <form class="create-form">
+        <div class="form-group">
+            <input type="text" id="newBurger" name="burger">
+            <button type="submit" class="btn btn-primary" id="addBurger">Add Burger</button>
+        </div>
+    </form>
 </div>

@@ -15,13 +15,11 @@ $(function () {
         console.log("Successfully added burger@")
         location.reload()
     })
-
   });
 //Once user clicks "DEVOUR IT", the burger will be changed to devoured true
   $("#devourButton").on("click", function(event) {
     //need to prevent default in form
     event.preventDefault();
-
     var id = $(this).data("id");
     var devouredState = {
       devoured: 1
