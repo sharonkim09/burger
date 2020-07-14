@@ -15,7 +15,7 @@
     </div>
 
     <div class="col-md-8">
-        <h2>Devoured Burgers</h2>>
+        <h2>Devoured Burgers</h2>
         <ul>
             {{#each burgers}}
             {{#if devoured}}
@@ -24,5 +24,10 @@
             {{/each}}
         </ul>
     </div>
-
+<form>
+    <div class="form-group">
+      <input type="text" id="newBurger" name="burger">
+      <button type="submit" class="btn btn-primary" id="addBurger">Add Burger</button>
+    </div>
+</form>
 </div>
