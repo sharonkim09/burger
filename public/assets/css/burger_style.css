@@ -1,16 +1,36 @@
 #imgElement{
+    margin-top:15px;
     width:30%;
+    border:5px solid rgb(247, 187, 98);
+}#imgElement:hover{
+    border:5px solid rgb(191, 125, 27);
 }
 body{
-    background-color:#FFECF5;
+    background-color:rgb(255, 205, 118);
     font-family: 'Fondamento', cursive;
+    font-size:25px;
 }
 #devourButton, #addBurger{
-    background-color: 	#DEB887;
+    color:white;
+    background-color: 	rgb(199, 151, 88);
 }
-span{
-    font-size: 30px;
+#devourButton:hover, #addBurger:hover{
+    background-color: 	rgb(145, 100, 41);
 }
 ul{
     list-style: none
+}
+.create-form{
+    margin-bottom:100px;
+}
+li{
+    margin: 5px;
+}
+#contentForBurgers{
+    margin-top:40px;
+}
+.addingBurger{
+    float:none;
+    justify-content: center;
+    margin: auto;
 }
