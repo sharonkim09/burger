@@ -1,9 +1,6 @@
+<div class="jumbotron"><h1 class="text-center">Eat-Da-Burger</h1></div>
+
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12 justify-content-center">
-            <p class="text-center"><img src="https://cdn.dribbble.com/users/184987/screenshots/5712804/minnaso_burger.png" id="imgElement"></p>
-        </div>
-    </div>
     <div class="row">
         <div class="col-md-6">
             <h2 class=>Burgers not eaten</h2>
@@ -11,29 +8,29 @@
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li><span> {{this.id}}. {{this.burger_name}}</span>
-                    <button type="button" class="btn btn-lg" id="devourButton" data-id={{this.id}}>DEVOUR
+                    <button type="button" class="btn btn-primary" id="devourButton" data-id={{this.id}}>DEVOUR
                         IT</button></li>
                 {{/unless}}
                 {{/each}}
             </ul>
         </div>
+
+
         <div class="col-md-6">
             <h2>Devoured Burgers</h2>
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                <li>
                 <span> {{this.id}}. {{this.burger_name}}</span>
-                </li>
                 {{/if}}
                 {{/each}}
             </ul>
         </div>
     </div>
     <form class="create-form">
-        <div class="form-group col-md-4 col-md-offset-4 align-center">
-            <textarea type="text" rows="5" cols="40"id="newBurger" name="burger"></textarea>
-            <button type="submit" class="btn btn-lg" id="addBurger">Add Burger</button>
+        <div class="form-group">
+            <input type="text" id="newBurger" name="burger">
+            <button type="submit" class="btn btn-primary" id="addBurger">Add Burger</button>
         </div>
     </form>
 </div>
