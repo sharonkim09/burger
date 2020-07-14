@@ -17,15 +17,15 @@ This application is a burger logger that lets users input the names of burgers o
 2. Run node server.js in terminal 
 
 ## Usage
-[Link to Deployed Application]()
+[Link to Deployed Application](https://damp-depths-84040.herokuapp.com/)
 
 
 
 
 ## Credits
-This design was designed by the curriculum team. The instructions were provided to me by GT Full Stack Coding Program. 
- 
-Thanks to the lectures and class activities I was able to 
+This design was designed by the curriculum team. The instructions were provided to me by GT Full Stack Coding Program.
+
+** Thanks to the lectures and class activities specifically the Cats App I was able to grab code and see what they meant and use them for this application.
 
 ## License
 MIT License
