@@ -41,9 +41,9 @@ function printQuestionMarks(num) {
 // getting template from cats activites
 var orm = {
     selectAll: function(table, cb) {
-      var dbQuery = "SELECT * FROM " + table + ";";
+      var queryString = "SELECT * FROM " + table + ";";
   
-      connection.query(dbQuery, function(err, res) {
+      connection.query(queryString, function(err, res) {
         if (err) {
           throw err;
         }
@@ -60,9 +60,7 @@ var orm = {
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
-    
         console.log(queryString);
-    
         connection.query(queryString, vals, function(err, result) {
           if (err) {
             throw err;

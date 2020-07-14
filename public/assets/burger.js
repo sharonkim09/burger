@@ -1,9 +1,9 @@
 $(function () {
-  $("#create-form").on(submit, function (event) {
+  $(".create-form").on("submit", function (event) {
     //    need to prevent default in form
     event.preventDefault();
     var createdBurger = {
-      burger_name: $("newBurger").val().trim(),
+      burger_name: $("#newBurger").val().trim(),
       devoured: 0,
     };
     $.ajax("api/burgers", {
