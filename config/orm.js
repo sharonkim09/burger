@@ -50,6 +50,7 @@ var orm = {
         cb(res);
       });
     },
+    // need to work on adding burger 
     insertOne: function(table,cols,vals,cb) {
         var queryString = "INSERT INTO " + table;
 
