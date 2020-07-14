@@ -5,12 +5,12 @@ body{
     background-color:#FFECF5;
     font-family: 'Fondamento', cursive;
 }
-.btn{
+#devourButton, #addBurger{
     background-color: 	#DEB887;
 }
 span{
-    font-size: 35px;
+    font-size: 30px;
 }
-li{
+ul{
     list-style: none
 }
