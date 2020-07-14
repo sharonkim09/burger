@@ -1,0 +1,15 @@
+#imgElement{
+    /* display:inline-block; */
+    width:20px;
+    height:20px;
+}
+ #jumboDiv{
+    background-color: orange;
+} 
+.container{
+    background-color: orange;
+} */
+
+body{
+    background-color:orange;
+}
